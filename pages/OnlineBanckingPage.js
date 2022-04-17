@@ -8,8 +8,8 @@ export default class OnlineBankingPage extends BasePage {
 
     async visit() {
         await page.goto("http://zero.webappsecurity.com/online-banking.html");
-        // await page.waitForSelector("#online_banking_features");
-        await page.isOnlineBankingPageDisplayed();
+        await page.waitForSelector("#online_banking_features");
+        //await page.isOnlineBankingPageDisplayed();
     };
 
 
