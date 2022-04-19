@@ -4,13 +4,14 @@ const online_banking_features = "#online_banking_features";
 
 export default class OnlineBankingPage extends BasePage {
     
-    async isOnlineBankingPageDisplayed() {
+    isOnlineBankingPageDisplayed = function isOnlineBankingPageDisplayed() {
        page.waitForSelector(online_banking_features);
     };
 
     async visit() {
         await page.goto("http://zero.webappsecurity.com/online-banking.html");
-        await page.waitForSelector(online_banking_features);
+        //await page.waitForSelector(online_banking_features);
+        await this.isOnlineBankingPageDisplayed()
         // await isOnlineBankingPageDisplayed();
     };
 
