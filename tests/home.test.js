@@ -1,10 +1,10 @@
 import HomePage from '../pages/HomePage'
-
+jest.setTimeout(5000);
 describe('First test',  () => {
     let homePage;
 
     beforeAll(async () => {
-        jest.setTimeout(15000);
+        
         homePage = new HomePage();
     }); 
 

@@ -1,15 +1,17 @@
 const { default: BasePage } = require("./BasePage");
 
+const online_banking_features = "#online_banking_features";
+
 export default class OnlineBankingPage extends BasePage {
     
     async isOnlineBankingPageDisplayed() {
-        await page.waitForSelector("#online_banking_features");
+       page.waitForSelector(online_banking_features);
     };
 
     async visit() {
         await page.goto("http://zero.webappsecurity.com/online-banking.html");
-        await page.waitForSelector("#online_banking_features");
-        //await page.isOnlineBankingPageDisplayed();
+        await page.waitForSelector(online_banking_features);
+        // await isOnlineBankingPageDisplayed();
     };
 
 
