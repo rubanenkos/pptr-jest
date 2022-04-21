@@ -1,5 +1,7 @@
 import HomePage from '../pages/HomePage'
-jest.setTimeout(5000);
+import timeOut from "../config"
+
+jest.setTimeout(timeOut);
 describe('First test',  () => {
     let homePage;
 

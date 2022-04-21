@@ -1,6 +1,7 @@
 import OnlineBankingPage from '../pages/OnlineBanckingPage'
+import timeOut from "../config"
 
-jest.setTimeout(30000);
+jest.setTimeout(timeOut);
 
 describe('Online Banking suite', () => {
     let onlineBankingPage;

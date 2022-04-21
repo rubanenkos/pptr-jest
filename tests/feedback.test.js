@@ -1,6 +1,7 @@
 import FeedbackPage from '../pages/FeedbackPage';
+import timeOut from "../config";
 
-jest.setTimeout(5000);
+jest.setTimeout(timeOut);
 
 describe('Feedback Form suite', () => {
     let feedbackPage;
